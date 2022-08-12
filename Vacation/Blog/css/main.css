@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(243, 159, 159, 0.4),rgba(247, 179, 179, 0.0)),url('../images/18.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+nav{
+    color: black;
+    width: 100%;
+}
+nav .logo{
+    background-color: black;
+    color: white;
+    width: 20%;
+    text-align: center;
+    float: left;
+    padding: 15px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+nav .logo h1{
+    font-size: 30px;
+}
+nav .logo h4{
+    font-size: 15px;
+    font-weight: normal;
+}
+nav .links{
+    width: 70%;
+    text-align: right;
+    float: left;
+    padding: 23px;
+}
+nav .links ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 17px;
+    padding: 14px;
+}
+nav .links ul li #responsive{
+    color: #fff;
+}
+
+nav .links ul li span{
+    color: orange;
+}
+nav .links ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+}
+nav .links ul li a:hover{
+    color: black;
+}
+nav .links ul li button{
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: 1px solid orange;
+    border-radius: 5px;
+    transition: 1s;
+}
+nav .links ul li button:hover{
+    color: black;
+}
+.clr{
+    clear: both;
+}
+header .container{
+    color: #fff;
+    text-align: center;
+}
+header .container h2{
+    width: 70%;
+    margin: auto;
+    padding-top: 20%;
+    font-size: 65px;
+    font-weight: bold;
+}
+/* Style the list */
+header .container  .breadcrumb{
+    padding: 10px 16px;
+    list-style: none;
+}
+header .container .breadcrumb-item{
+    display: inline;
+    font-size: 18px;
+}
+header .container .breadcrumb li+li:before{
+    padding: 8px;
+    color: white;
+    content: ">";
+}
+header .container .breadcrumb-item a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+header .container .breadcrumb-item a span:hover{
+    color: orange;
+}
+header .container .breadcrumb li+li:after{
+    padding: 8px;
+    color: white;
+    content: ">";
+}
+/*  styles of Section Recent  */
+.recent{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+}
+.recent h1{
+    font-size: 30px;
+    margin: 30px;
+}
+.recent .container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+.recent .container .key{
+    width: 32%;
+    height: 200%;
+    margin: auto;
+    border: 1px solid rgb(209, 206, 206);
+}
+.recent .container .key img{
+    width: 100%;
+    height: 100%;
+}
+.recent .container .key h2{
+    text-align: justify;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    transition: all 1s ease;
+}
+.recent .container .key h2:hover{
+    color: orange;
+}
+.recent .container .key p{
+    text-align: justify;
+    font-size: 18px;
+    color: grey;
+    margin: 10px;
+}
+.recent .container .key .content{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 75%;
+    right: 84.25%;
+}
+.recent .container .content .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .content .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .content .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .content .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+.recent .container .key .contents{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 75%;
+    right: 51%;
+}
+.recent .container .contents .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .contents .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .contents .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .contents .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+.recent .container .key .contentss{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 40%;
+    right: 17.75%;
+}
+.recent .container .contentss .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentss .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .contentss .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentss .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+.recent .container .key .contentsss{
+    background-color: orange;
+    color: #fff;
+    
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 40%;
+    right: 17.75%;
+}
+.recent .container .contentsss .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentsss .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .contentsss .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentsss .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+/* Pagination links */
+.pagination a {
+    color: black;
+    float: left;
+    padding: 10px 20px;
+    margin-left: 7%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+/*  Feedback Section   */
+.feedback{
+    margin-top: 200px;
+    background-image: url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+.feedback .item{
+    width: 90%;
+    height: 45vh;
+    background-color: #fff;
+    font-size: 15px;
+    text-align: left;
+    color: grey;
+    padding: 20px;
+    margin: 30px;
+}
+.feedback .item p{
+    font-size: 19px;
+}
+.feedback .item .myimg{
+    width: 30%;
+    margin: 15px;
+}
+.feedback .item .myimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    float: left;
+}
+.feedback .item .myroger{
+    width: 50%;
+    margin: 15px;
+    float: left;
+    line-height: 40px;
+}
+.feedback .item .myroger h1{
+    color: black;
+    font-size: 18px;
+}
+.feedback .item .myroger p{
+    font-size: 14px;
+}
+.clr2{
+    clear: both;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: orange;
+}
+/*  styles of Section Recent  */
+.recent{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+}
+.recent h1{
+    font-size: 30px;
+    margin: 30px;
+}
+.recent .container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+.recent .container .key{
+    width: 32%;
+    height: 200%;
+    margin: auto;
+    border: 1px solid rgb(209, 206, 206);
+}
+.recent .container .key img{
+    width: 100%;
+    height: 100%;
+}
+.recent .container .key h2{
+    text-align: justify;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    transition: all 1s ease;
+}
+.recent .container .key h2:hover{
+    color: orange;
+}
+.recent .container .key p{
+    text-align: justify;
+    font-size: 18px;
+    color: grey;
+    margin: 10px;
+}
+.recent .container .key .content{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 41%;
+    right: 84.25%;
+}
+.recent .container .content .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .content .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .content .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .content .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+.recent .container .key .contents{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 40%;
+    right: 51%;
+}
+.recent .container .contents .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .contents .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .contents .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .contents .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+.recent .container .key .contentss{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 40%;
+    right: 17.75%;
+}
+.recent .container .contentss .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentss .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .contentss .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentss .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+/*  styles of footer   */
+footer{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0, 0, 0, 0.7)), url('../images/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer .vacation{
+    width: 22%;
+    padding: 20px;
+}
+footer .vacation h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .vacation p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+}
+footer .vacation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+footer .vacation ul li #social{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+}
+footer .info{
+    width: 22%;
+    padding: 20px;
+}
+footer .info h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .info ul li{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+    cursor: pointer;
+}
+footer .experience{
+    width: 22%;
+    padding: 20px;
+}
+footer .experience h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .experience ul li{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+    cursor: pointer;
+}
+footer .questions{
+    width: 22%;
+    padding: 20px;
+   
+}
+footer .questions h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .questions ul li{
+    list-style: none;
+    text-align: left;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+    cursor: pointer;
+}
+footer .questions #dot{
+    color: #fff;
+}
+footer .questions .dataInfo{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .myp{
+    text-align: center;
+    margin: 70px;
+    font-size: 20px;
+    color: grey;
+}
+footer .myp #heart{
+    color: #fff;
+}
+/*    Media Queries    */

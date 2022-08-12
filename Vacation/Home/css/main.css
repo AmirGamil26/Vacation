@@ -1,0 +1,998 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0.3,0.6), rgba(0,0,0.6,0.6)),url(../images/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+header .btnframe{
+    background-color: orange;
+    color: #fff;
+    padding: 30px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 47%;
+    margin-top: 15%;
+}
+header .iframe{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: none;
+}
+header .iframe iframe{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    color: black;
+    width: 100%;
+}
+nav .logo{
+    background-color: black;
+    color: white;
+    width: 20%;
+    text-align: center;
+    float: left;
+    padding: 15px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+nav .logo h1{
+    font-size: 30px;
+}
+nav .logo h4{
+    font-size: 15px;
+    font-weight: normal;
+}
+nav .links{
+    width: 70%;
+    text-align: right;
+    float: left;
+    padding: 23px;
+}
+nav .links ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 17px;
+    padding: 14px;
+}
+nav .links ul li #responsive{
+    color: #fff;
+}
+
+nav .links ul li span{
+    color: orange;
+}
+nav .links ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+}
+nav .links ul li a:hover{
+    color: black;
+}
+nav .links ul li button{
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: 1px solid orange;
+    border-radius: 5px;
+    transition: 1s;
+}
+nav .links ul li button:hover{
+    color: black;
+}
+.clr{
+    clear: both;
+}
+header .container{
+    color: #fff;
+    text-align: center;
+}
+header .container p{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+header .container h2{
+    width: 70%;
+    margin: auto;
+    font-size: 65px;
+    font-weight: normal;
+}
+/*    reservation section   */
+.reservation{
+    background-color: black;
+    color: whitesmoke;
+    width: 75%;
+    height: 13vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2%;
+    left: 15%;
+    border: 1px solid black;
+    border: 10px;
+}
+.reservation .destination{
+    color: whitesmoke;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+}
+.reservation .destination label{
+    display: block;
+    margin-bottom: 10px;
+}
+.reservation .destination input{
+    padding: 8px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+.reservation .destination .fa-solid{
+    font-size: 10px;
+}
+.reservation .Check-in{
+    color: whitesmoke;
+    width: 20%;
+    text-align: center;
+    padding: 9px;
+}
+.reservation .Check-in label{
+    display: block;
+    margin-bottom: 10px;
+}
+.reservation .Check-in input{
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color: whitesmoke;
+}
+.reservation .check-out{
+    color: whitesmoke;
+    width: 20%;
+    text-align: center;
+    padding: 8px;
+}
+.reservation .check-out label{
+    display: block;
+    margin-bottom: 10px;
+}
+.reservation .check-out input{
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color: whitesmoke;
+}
+.reservation .price{
+    color: whitesmoke;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+.reservation .price label{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.reservation .price input{
+    padding: 8px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color: whitesmoke;
+}
+.reservation .btn1 button{
+    padding: 20px 40px;
+    background-color: orange;
+    color: #fff;
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+/*   styles of desc section  */
+.desc{
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.desc .content{
+    width: 50%;
+    text-align: justify;
+    padding: 20px;
+}
+.desc .content .activity{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.desc .content .activity #para{
+    text-align: left;
+    color: orange;
+    font-size: 60px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+.desc .content .activity h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.desc .content .activity p{
+    color: grey;
+    margin-top: 20px;
+}
+.desc .content .travel{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.desc .content .travel #route{
+    text-align: left;
+    color: orange;
+    font-size: 60px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+.desc .content .travel h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.desc .content .travel p{
+    color: grey;
+    margin-top: 20px;
+}
+.desc .content .guide{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.desc .content .guide #person{
+    text-align: left;
+    color: orange;
+    font-size: 60px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+.desc .content .guide h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.desc .content .guide p{
+    color: grey;
+    margin-top: 20px;
+}
+.desc .content .location{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.desc .content .location #location{
+    text-align: left;
+    color: orange;
+    font-size: 60px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+.desc .content .location h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.desc .content .location p{
+    color: gray;
+    margin-top: 20px;
+}
+.clr2{
+    clear: both;
+}
+.desc .adventure{
+    width: 50%;
+    text-align: justify;
+    padding: 20px;
+    line-height: 40px;
+    margin-top: 50px;
+}
+.desc .adventure h2{
+    text-align: center;
+}
+.desc .adventure p{
+    color: grey;
+    margin-top: 20px;
+}
+.desc .adventure button{
+    padding: 20px;
+    background-color: orange;
+    color: whitesmoke;
+    margin-top: 35px;
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+/*   The Third Section   */
+.memorable{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.memorable .img1{
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+}
+.memorable .img1 img{
+    width: 80%;
+    height: 80%;
+}
+.memorable .text{
+    width: 50%;
+    padding: 50px;
+}
+.memorable .text h2{
+    width: 100%;
+    font-size: 40px;
+}
+.memorable .text p{
+    text-align: justify;
+    margin: 30px 0;
+    line-height: 40px;
+    color: grey;
+}
+.memorable .text .counter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.memorable .text .counter .tours{
+    width: 32%;
+    margin: auto;
+    text-align: center;
+}
+.memorable .text .counter .tours h2{
+    text-align: center;
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+.memorable .text .counter .tours p{
+    text-align: center;
+    font-size: 18px;
+}
+.memorable .text .counter .happy{
+    width: 32%;
+    margin: auto;
+    text-align: center;
+}
+.memorable .text .counter .happy h2{
+    text-align: center;
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+.memorable .text .counter .happy p{
+    text-align: center;
+    font-size: 18px;
+}
+.memorable .text .counter .explored{
+    width: 32%;
+    margin: auto;
+    text-align: center;
+}
+.memorable .text .counter .explored h2{
+    text-align: center;
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+.memorable .text .counter .explored p{
+    text-align: center;
+    font-size: 18px;
+}
+/*    Destination Section  */
+.destina{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.destina h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.destina .images{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.destina .images .singapore{
+    width: 24%;
+    position: relative;
+}
+.destina .images .singapore img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.destina .images .singapore h2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.destina .images .canada{
+    width: 24%;
+    position: relative;
+}
+.destina .images .canada h2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.destina .images .canada img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.destina .images .thailand{
+    width: 24%;
+    position: relative;
+}
+.destina .images .thailand h2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.destina .images .thailand img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.destina .images .autralia{
+    width: 24%;
+    position: relative;
+}
+.destina .images .autralia h2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.destina .images .autralia img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.destina .images  .parent{
+    position: relative;
+}
+
+.destina .images .singapore .tours{
+    text-align: center;
+    background-color: rgb(90, 87, 87);
+    color: #fff;
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.destina .images .singapore .tours h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+.destina .images .singapore .tours:hover{
+    background-color: orange;
+    color: #fff;
+    width: 32%;
+}
+.destina .images .canada .tours{
+    text-align: center;
+    background-color: rgb(90, 87, 87);
+    color: #fff;
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.destina .images .canada .tours h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+.destina .images .canada .tours:hover{
+    background-color: orange;
+    color: #fff;
+    width: 32%;
+}
+.destina .images .thailand .tours{
+    text-align: center;
+    background-color: rgb(90, 87, 87);
+    color: #fff;
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.destina .images .thailand .tours h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+.destina .images .thailand .tours:hover{
+    background-color: orange;
+    color: #fff;
+    width: 32%;
+}
+.destina .images .autralia .tours{
+    text-align: center;
+    background-color: rgb(90, 87, 87);
+    color: #fff;
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.destina .images .autralia .tours h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+.destina .images .autralia .tours:hover{
+    background-color: orange;
+    color: #fff;
+    width: 32%;
+    
+}
+/*    Tours Destination styles  */
+.tours-destin{
+    text-align: center;
+    width: 100%;
+    height: 150vh;
+    padding: 50px;   
+}
+.tours-destin h1{
+    margin: 30px;
+}
+.tours-destin .bali{
+    width: 30%;
+    height: 70vh;
+    border: 1px solid rgba(238, 234, 234, 0.87);
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+}
+.tours-destin .bali img{
+    width: 100%;
+    height: 60%;
+}
+.tours-destin .bali p{
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    color: grey;
+    margin: 10px;
+}
+.tours-destin .bali h1{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin: 10px;
+}
+.tours-destin .bali h4{
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+    margin: 15px;
+}
+.tours-destin .bali h5{
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    margin: 15px;
+}
+.tours-destin .bali #bath{
+    color: orange;
+}
+.tours-destin .bali #burger{
+    color: orange;
+}
+.tours-destin .bali #umbrella{
+    color: orange;
+}
+.tours-destin .bali .cost{
+    background-color: orange;
+    width: 40%;
+    margin: auto;
+    padding: 1px;
+    position: absolute;
+    bottom: 37%;
+    left: 29%;
+    border-radius: 20px;
+    transition: all 0.7s ease;
+}
+.tours-destin .bali .cost:hover{
+    background-color: black;
+    color: #fff;
+}
+.tours-destin .bali .cost p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+/*  Feedback Section   */
+.feedback{
+    margin-top: 200px;
+    background-image: url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 40px;
+}
+.feedback .item{
+    width: 90%;
+    height: 45vh;
+    background-color: #fff;
+    font-size: 15px;
+    text-align: left;
+    color: grey;
+    padding: 20px;
+    margin: 30px;
+}
+.feedback .item p{
+    font-size: 19px;
+}
+.feedback .item .myimg{
+    width: 30%;
+    margin: 15px;
+}
+.feedback .item .myimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    float: left;
+}
+.feedback .item .myroger{
+    width: 50%;
+    margin: 15px;
+    float: left;
+    line-height: 40px;
+}
+.feedback .item .myroger h1{
+    color: black;
+    font-size: 18px;
+}
+.feedback .item .myroger p{
+    font-size: 14px;
+}
+.clr2{
+    clear: both;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: orange;
+}
+/*  styles of Section Recent  */
+.recent{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+}
+.recent h1{
+    font-size: 30px;
+    margin: 30px;
+}
+.recent .container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+.recent .container .key{
+    width: 32%;
+    height: 200%;
+    margin: auto;
+    border: 1px solid rgb(209, 206, 206);
+}
+.recent .container .key img{
+    width: 100%;
+    height: 100%;
+}
+.recent .container .key h2{
+    text-align: justify;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    transition: all 1s ease;
+}
+.recent .container .key h2:hover{
+    color: orange;
+}
+.recent .container .key p{
+    text-align: justify;
+    font-size: 18px;
+    color: grey;
+    margin: 10px;
+}
+.recent .container .key .content{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 41%;
+    right: 84.25%;
+}
+.recent .container .content .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .content .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .content .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .content .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+.recent .container .key .contents{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 40%;
+    right: 51%;
+}
+.recent .container .contents .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .contents .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .contents .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .contents .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+.recent .container .key .contentss{
+    background-color: orange;
+    color: #fff;
+    width: 15%;
+    border: 1px solid orange;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 40%;
+    right: 17.75%;
+}
+.recent .container .contentss .head{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentss .head h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.recent .container .contentss .date{
+    width: 50%;
+    float: left;
+}
+.recent .container .contentss .date p{
+    color: white;
+    font-size: 17px;
+}
+.clr3{
+    clear: both;
+}
+/*  styles of footer   */
+footer{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0, 0, 0, 0.7)), url('../images/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer .vacation{
+    width: 22%;
+    padding: 20px;
+}
+footer .vacation h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .vacation p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+}
+footer .vacation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+footer .vacation ul li #social{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+}
+footer .info{
+    width: 22%;
+    padding: 20px;
+}
+footer .info h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .info ul li{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+    cursor: pointer;
+}
+footer .experience{
+    width: 22%;
+    padding: 20px;
+}
+footer .experience h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .experience ul li{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+    cursor: pointer;
+}
+footer .questions{
+    width: 22%;
+    padding: 20px;
+   
+}
+footer .questions h2{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .questions ul li{
+    list-style: none;
+    text-align: left;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+    cursor: pointer;
+}
+footer .questions #dot{
+    color: #fff;
+}
+footer .questions .dataInfo{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer .myp{
+    text-align: center;
+    margin: 70px;
+    font-size: 20px;
+    color: grey;
+}
+footer .myp #heart{
+    color: #fff;
+}
+/*    Media Queries    */
